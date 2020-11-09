@@ -1,0 +1,35 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif; */
+.btn {
+    width: 240px;
+    height: 69px;
+    color: white;
+    border-radius: 4px;
+    font-size: 22px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn.primary {
+    background-color: #940637;
+}
+
+.btn.primary:hover {
+    background-color: #330000;
+}
+
+.btn.disabled {
+    background-color: #b6b6b6;
+    color: black !important;
+}
+
+.btn.back {
+    background-color: #b6b6b6;
+    color: #940637 !important;
+    border-color: #940637;
+}
+
+.btn.back:hover {
+    box-shadow: 0px 3px 6px #94063745;
+    border: 2px solid #330000;
+}
