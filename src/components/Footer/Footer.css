@@ -1,0 +1,86 @@
+.footer {
+    height: 100%;
+    background-color: lightgray;
+}
+
+.footer__sectionTwo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__inputGroup {
+    height: 33px;
+    margin-top: 12px;
+}
+
+.footer__inputGroup input {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    border: 0px;
+    border-bottom: 1px solid #940637;
+    color: #940637;
+    background-color: lightgray;
+}
+
+.footer__inputGroup input:focus {
+    outline: none;
+}
+
+.footer__inputGroup input::placeholder {
+    padding: 0;
+    font-size: 12px;
+    color: #940637;
+}
+
+.footer__inputGroup button {
+    height: 100%;
+    width: 100px;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.footer__imageGroup .footer__logoImage {
+    width: 200px;
+}
+
+.footer__imageGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__imageIconGroup {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__imageIconGroup img {
+    width: 20px;
+    margin-left: 15px;
+}
+
+.footer__sectionOne {
+    padding-top: 35px;
+}
+
+.footer__sectionOne h2 {
+    font-family: "Montserat", sans-serif;
+}
+
+.footer__sectionOne small {
+    font-family: "Raleway", sans-serif;
+}
+
+.footer__container {
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.footer__disclaimer {
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: justify;
+}
