@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 import Logo from "../../images/Logo.png";
 function Header() {
+    const [showShadow, setShowShadow] = useState(false);
+
+    const trackScrolling = (e) => {
+        const wrappedElement = document.getElementById("header");
+        if (wrappedElement.getBoundingClientRect().top == 0) {
+            setShowShadow(false);
+        } else {
+            setShowShadow(true);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener("scroll", trackScrolling);
+    });
+
     return (
-        <nav className="header">
+        <nav
+            className={showShadow ? "header boxShadowHeader" : "header"}
+            id="header"
+        >
             <img src={Logo} />
 
             <ul>
